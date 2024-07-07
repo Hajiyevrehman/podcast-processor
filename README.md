@@ -29,25 +29,24 @@ Installation
 Clone the repository:
 
 sh
-Copy code
-git clone https://github.com/yourusername/podcast-processor.git
-cd podcast-processor
+```git clone https://github.com/yourusername/podcast-processor.git```
+```cd podcast-processor ```
 Create and activate a virtual environment:
 
 sh
-Copy code
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+```python -m venv venv```
+```source venv/bin/activate  # On Windows: venv\Scripts\activate```
+
 Install the dependencies:
 
-sh
-Copy code
+```
 pip install -r requirements.txt
+```
 Create the static directory:
 
-sh
-Copy code
+```
 mkdir static
+```
 Set your API keys in app.py:
 
 Replace your_anthropic_api_key and your_openai_api_key with your actual API keys.
@@ -55,10 +54,10 @@ Usage
 
 Run the Flask app:
 
-sh
-Copy code
+```
 export FLASK_APP=app.py  # On Windows: set FLASK_APP=app.py
 flask run
+```
 Open your web browser and navigate to http://localhost:5000/.
 
 Paste your podcast transcript into the textarea and click the "Process Podcast" button.
